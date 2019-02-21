@@ -81,7 +81,7 @@ def
 La sig fig. *Es un modelo de este proceso que muestra las descripciones de diseño producidas en diferentes etapas de diseño Este diagrama sugiere que las etapas son sequenciales, de hecho las activiadades de proseso de diseno se etrelazan. La retroalimentacion entre etapas y la consecuente repeticion del trabajo es inevitable en todos los prosesos de diseño:*
 
 Actividadees de diseño
-![Modelo del Proceso](https://lh4.googleusercontent.com/-2W8LlkJU-P-zTng-Z3jwig30A89VlbJDIB-tQpxOoKYhV8cLGkhQwWZrqrnz2InW6jx4Q)
+![Procesos](/img/2.2.png)
 Productos de diseño
 
 Una especificación para la siguiente etapa es la salida de cada actividad de diseño. Esta clasificación puede ser abstracta y formal para clarificar los requerimientos o puede ser una especificación para determinar que parte del sistema se va a construir, durante todo el proceso de diseño se detalla cada vez mas la especificación. El resultado final del proceso son espicificaciones presisas de los algoritmos y estructuras de datos a implementarse.
@@ -110,15 +110,15 @@ Diseno de Algoritmos
 def
 : El primer modelo de desarrollo de SW que se publico, se derivo de otros proceso de ingenieria. Debido a la casacada de una fase a otra este modelo se le conose como modelo de cascada ó  *Ciclo de vida del SW*
 
-![FB7OnFPSZgC5F2pqXv19Q24mT5BPkfuooMFeUx9SDnsZv-bkrcBFxgbkU-2-GuhU9xSl1A](https://lh6.googleusercontent.com/FB7OnFPSZgC5F2pqXv19Q24mT5BPkfuooMFeUx9SDnsZv-bkrcBFxgbkU-2-GuhU9xSl1A)
+![Cascada](/img/Second.png)
 
 # Desarrollo Orientado a la Reutilización
 def
 :  En la mayoria de los proyectos de SW existe algo de reutilizacion de SW por lo general esto pasa cuando las personas que trabajan en el proyecto conocen diseños o codigos similares al requerido. Este enfoque basado en la reutilización se compone de un gran numero  de componentes de SW reutilizable asi como de marcos de trabajos para estos, algunas veces esos componentes son sistemas por si mismos que se utilizan para proveer funcionalidad especifica.
-![NR4AHdTsGo92QwXO2rpZ0Q1sEA5je31rhU9Vbx5AyOWq-CNlkhR5koRAwTWcCbWGgsxgIw](https://lh6.googleusercontent.com/NR4AHdTsGo92QwXO2rpZ0Q1sEA5je31rhU9Vbx5AyOWq-CNlkhR5koRAwTWcCbWGgsxgIw)
+![Procesos](/img/ModReuti.png)
 
 # Validacion del SW
 def
 :  Se utiliza para mostrar que el sistema esta acorde a su especificacion y que cumple con las espectativas del usuario. Incluye procesos de comprobacion, como: LAs inspecciones y las reviciones de cada etapa del proceso del SW desde la definicion de requerimineto hasta el desarrollo del programa. en la sig figura se muentra un proceso de pruebas de 5 etapas en el cual se prueban los componentes del sistema.
 
-![FHeE1q3isUJAbKzFOpvMjBGhcQobZTeDle3-nyKWcPS4EgUjhkS8Bas2SgLvT-2PJgoL8A](https://lh6.googleusercontent.com/FHeE1q3isUJAbKzFOpvMjBGhcQobZTeDle3-nyKWcPS4EgUjhkS8Bas2SgLvT-2PJgoL8A)
+![Procesos](/img/ValSW.png)
