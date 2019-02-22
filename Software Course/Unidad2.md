@@ -1,5 +1,4 @@
-- 7 Feb Jueves Examen
-- 8 Feb Viernes Lab "D"
+
 ### 01/02/19
 # Unidad 2 Diseño
 
@@ -67,7 +66,6 @@ def.
 def.
 : Sirve para establecer que servicios requiere el sistema y las restricciones de operacion y desarrollo del mismo. Esta actividad se llama *Ing. de Requerimientos*. Esta etapa es particularmente critica en el proceso de *SW* ya que los errores en esta etapa conducen inevitablemente a problemas porsterires en el diseño y en el sistema.
 
-Get las class notes ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ## 02/18/19 Class
 
 ### Validacion de requerimientos
@@ -127,7 +125,7 @@ def
 def
 : La flexibilidad de los sistemas de SW en una de las principales razones por las que más y más SW se incorpora a los sistemas grandes y complejos. El desarrollo de SW se considera una actividad creativa en el cual un sistema se desarrolla desde un concepto inicial hasta que se pone en funcionamiento. El mantenimiento de SW es el proceso de cambio del sistema una vez que se ha puesto en funcionamiento aunque los costos de mantenimiento son a menudo varias veces mas que los costos de desarrollo, el proceso de mantenimiento se considera menos problematico que el de desarrollo del SW original. Hoy en dia pocos sistemas de SW con completamente nuevo lo que implica que tienen más sentido ver el desarrollo y el mantenimiento como actividades continuas. Más qeu 2 procesos separados es más realista considerar a la ing de se como un proseso evolutivo en el cual cambia continuamente duracte su periodo de vida.
 
-![2.6](https://lh3.googleusercontent.com/JtOWqXAEpTt0675uIS801OJJCjc0FaCPsjdH_A0ax7DvPuvlepRb610FsvIifAI1RFr--g) 
+![2.6](/img/2.6.png) 
 
 # Diseño arquitectonico
 def
@@ -168,7 +166,7 @@ Las arquitecturas de muchos sistemas grandes comprenden más de un modelo, las d
  
  ## Modelo de depósito
  def
-  : Los subsistemas que componen un sistema deben intercambiar información con el fin de que puedan trabajar de manera conjunta y efectiva, existen 2 formas para lograr esto:
+ : Los subsistemas que componen un sistema deben intercambiar información con el fin de que puedan trabajar de manera conjunta y efectiva, existen 2 formas para lograr esto:
   - Todos los datos compartidos se ubican en una base de datos central que puede ser accedida por todos los subsistemas. Un modelo del sistema basado en una *DB* compartida se denomina algunas veces *Modelo de deposito*.
   - Cada subsitema tiene su propia *DB* los datos intercambian con otros subsistems pasando mensaje entre ellos. La mayoria de los sistemas que utilizan grandes cantidades de datos se organizan alrededor de una *DB* compartida ó depostiso por lo tanto este modelo es adecuado para aplicaciones donde los datos sean generados por 1 subsistema y utilizados por otro.
 
