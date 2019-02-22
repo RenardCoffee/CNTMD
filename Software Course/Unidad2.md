@@ -122,3 +122,63 @@ def
 :  Se utiliza para mostrar que el sistema esta acorde a su especificacion y que cumple con las espectativas del usuario. Incluye procesos de comprobacion, como: LAs inspecciones y las reviciones de cada etapa del proceso del SW desde la definicion de requerimineto hasta el desarrollo del programa. en la sig figura se muentra un proceso de pruebas de 5 etapas en el cual se prueban los componentes del sistema.
 
 ![Procesos](/img/ValSW.png)
+
+# Evolución del SW
+def
+: La flexibilidad de los sistemas de SW en una de las principales razones por las que más y más SW se incorpora a los sistemas grandes y complejos. El desarrollo de SW se considera una actividad creativa en el cual un sistema se desarrolla desde un concepto inicial hasta que se pone en funcionamiento. El mantenimiento de SW es el proceso de cambio del sistema una vez que se ha puesto en funcionamiento aunque los costos de mantenimiento son a menudo varias veces mas que los costos de desarrollo, el proceso de mantenimiento se considera menos problematico que el de desarrollo del SW original. Hoy en dia pocos sistemas de SW con completamente nuevo lo que implica que tienen más sentido ver el desarrollo y el mantenimiento como actividades continuas. Más qeu 2 procesos separados es más realista considerar a la ing de se como un proseso evolutivo en el cual cambia continuamente duracte su periodo de vida.
+
+![2.6](https://lh3.googleusercontent.com/JtOWqXAEpTt0675uIS801OJJCjc0FaCPsjdH_A0ax7DvPuvlepRb610FsvIifAI1RFr--g) 
+
+# Diseño arquitectonico
+def
+: Es el proceso de diseño inicial para identificar subsitemas y establecer un marco de trabajo para el control y comunicacion de los subsistemas, el modelo arquitectonico es a menudo el punto inicial para la especificacion de diversas partes del sistema. El proceso de diseño arquitectonico comprende el establecimiento de un marco de trabajo estructural basico para un sistema esto implica identificar los componentes principales del sistema y comunicacion entre ellos. El proceso utilizado depende del conocimineto de la aplicacion y de la capacidad e intuicion de los arquitectos del sistema.
+
+## Subsistema
+def
+: Es un proceso por si mismo cuya operación no depende de los servicios suministrados por otros subsistemas. Los subsistemas se componen de módulos y tienen interfaces definidas que se utilizan para la comunicacion con otros subsistemas.                   ___AutoSificiente___
+
+## Módulo
+def
+: Es por lo regular un componente del sistema que suministra uno ó más servicios a otros módulos por lo general *no se considera un sistema dependiente* ___Dependiente___
+
+Las arquitecturas de muchos sistemas grandes comprenden más de un modelo, las diversas partes del sistema se diseñan utilizando diferentes modelos aquitectonicos más aún en algunos casos la arquitectura del sistema es una arquitectura compueta. La arquitectura del sistema afecta el desempeño, la robustez, la distributibilidad y la manteniabilidad de un sistema por lo tanto el estilo particular y la estructura elegida para una aplicacion puede depender de los requerimientos no funcionales del sistema.
+
+1. Desempeño.
+2. Seguridad.
+3. Proteción.
+4. Disponibilidad.
+5. Mantenibilidad
+
+1 def
+: Aqui se sugiere que la arquitectura se debe diseñar para localizar las operaciones criticas dentro de un numero reducido de subsistemas con poca comunicación, hasta donde sea posible entre estos subsistemas.
+
+2 def
+: Si la proteción es un requerimiento critico esto sugiere que la arquitectura se debe diseñar de tal forma que las operaciones relacionadas con la protección se localicen en un solo subsistema o en numero reducido de subsistemas.
+
+3 def
+: Este sugiere que la arq se debe diseñar de tal forma que las operaciones relacionadas con la proteción se localizen en un solo subsitema o en un numero reducido de subsistemas.
+
+4 def
+ : Esto sugiere que la arquitectura debe diseñarse para incluir componentes redundantes de tal forma que sea posible remplazar y actualizar los componentes sin detener el sistema.
+ 
+ 5 def
+ : Esto sugiere que la arquitectura se debe diseñar utilizando componentes auto-contenidos de grano fino que puedan cambiarse con facilidad.
+ 
+ La primer faze de la actividad de diseño arquitectonico se refiere por lo general a la descomposición del sistema en un conjunto de subsistemas que interactuan.
+ 
+ ## Modelo de depósito
+ def
+  : Los subsistemas que componen un sistema deben intercambiar información con el fin de que puedan trabajar de manera conjunta y efectiva, existen 2 formas para lograr esto:
+  - Todos los datos compartidos se ubican en una base de datos central que puede ser accedida por todos los subsistemas. Un modelo del sistema basado en una *DB* compartida se denomina algunas veces *Modelo de deposito*.
+  - Cada subsitema tiene su propia *DB* los datos intercambian con otros subsistems pasando mensaje entre ellos. La mayoria de los sistemas que utilizan grandes cantidades de datos se organizan alrededor de una *DB* compartida ó depostiso por lo tanto este modelo es adecuado para aplicaciones donde los datos sean generados por 1 subsistema y utilizados por otro.
+
+## Modelo C-S
+def
+: Es un modelo de sistema distribuido que muestra como los datos y el procesamiento se distribuyen a lo largo de varios procesadores, los componentes de este modelo son:
+  1. Un conjunto de servidores independientes que ofrecen servicios a otros subsistemas.
+  2. Un conjunto de clientes que llaman a los serviciós ofrecidos por los servidores por lo general estos son subsistemas.
+  3. Una red que permite a los clientes acceder a estos servicios.
+
+## Modelo de maquina abstracta(Modelo de capas)
+def
+: Modela la interacción entre los subsistemas organiza un sistema en una serie de capas cada una de las cuales suministran un conjunto de servicios cada capa define una maquina abs. cuyo lenguaje de maquina se utilizan para implementar el sig. nivel de las maquinas abs. Cuando una capa se desarrolla algunos de los servicios suministrados por esa capa estan disponibles para los usuarios. esta arquitectura tambien es cambiable y portable, si su interfaz se preserva una capa puede remplazarze por otra. una desventaja es que estructurar los sistemas de esta forma es dificil.
