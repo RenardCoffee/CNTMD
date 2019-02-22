@@ -156,15 +156,16 @@ Arbol
 ![Topologia de Malla](https://sites.google.com/site/investigacionesitlm/_/rsrc/1478823631535/home/1-6-topologias-de-redes/arbol%20red.jpg)
 
 # Tipo de Red
-0 | Topologia | Topologia
-Tipo de red | Fisica | Logica 
------------- | ------- | -----------
-Coaxial grueso o delgado.      | Bus | Bus
+
+
+Tipo de red  | Fisica    | Logica 
+------------ | -------   | -----------
+Coaxial grueso o delgado.              | Bus | Bus
 Hub con UDP.	                       | Estrella | Bus
-Switch con UDP.                      | Estrella | Estrella
-Token ring con cable UDP.       | Estrella | Anillo
-FDDI con doble fibra optica.	 | Anillo | Anillo
-Ruteadores en WAN.	            | Malla parcial | Malla parcial
-AP inalambricas mesh.            | Malla completa | Malla Completa
-Red jerarquica con switches.   | Arbol | Arbol 
-Fibra optica y UDP.                  | Arbol | Arbol 
+Switch con UDP.                        | Estrella | Estrella
+Token ring con cable UDP.              | Estrella | Anillo
+FDDI con doble fibra optica.           | Anillo | Anillo
+Ruteadores en WAN.	               | Malla parcial | Malla parcial
+AP inalambricas mesh.                  | Malla completa | Malla Completa
+Red jerarquica con switches.           | Arbol | Arbol 
+Fibra optica y UDP.                    | Arbol | Arbol 
